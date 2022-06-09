@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+:root {
+    --prycyan: hsl(193, 38%, 86%);
+    --prygreen: hsl(150, 100%, 66%);
+    --neublue: hsl(217, 19%, 38%);
+    --neugrayblue: hsl(217, 19%, 24%);
+    --neudarkblue: hsl(218, 23%, 16%);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--neudarkblue);
+	font-family: 'Manrope', sans-serif;
+	width: 90%;
+    margin: 30px auto;
+}
+
+.heading{
+	margin: 10px 0;
+    color: var(--prygreen);
+    text-align: center;
+}
+
+li {
+	list-style: none;
+}
+
+.search-section {
+	background-color: var(--neugrayblue);
+	padding: 10px;
+}
+
+#search {
+	width: 100%;
+	padding: 12px 20px;
+	border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.user-list-section {
+	margin-top: 20px;
+}
+
+li {
+	border: 1px solid var(--prycyan);
+	margin-top: -1px ; /*prevent double border */
+	background-color: var(--neugrayblue);
+    color: var(--prygreen);
+	font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+	text-transform: capitalize;
+	padding: 15px;
+}
+
+li:hover {
+	background-color: var(--neublue);
+    color: var(--prygreen); 
+}
+
+.username {
+	background-color: var(--neudarkblue);
+	color: var(--prygreen);
+    font-weight: 400;
+	padding: 6px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+@media (min-width: 1000px){
+	body{
+		width: 50%;
+	}
+
+	li{
+		font-size: 14px;
+	}
+}
